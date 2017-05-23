@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Comments from './Comments'
 import './ArticleLinks.css'
 
 class ArticleLinks extends Component {
@@ -32,7 +33,7 @@ class ArticleLinks extends Component {
                 <span className="article-link-text">Share Post</span>
               </a>
             </div>
-            {this.state.showComments ? <div>Comments Enabled</div> : null}
+            {this.state.showComments ? <Comments/> : null}
           </div>
         );
     }
